@@ -4,9 +4,9 @@ except ImportError:
     from distutils.core import setup
 
 config = {
-    'description': 'Semi-automatic foodplanning',
+    'description': 'Automate your weekly dinnerplanning',
     'author': 'Kristian Nordin',
-    'url': 'URL to get it at.',
+    'url': 'https://www.github.com/knille/auto-food-planner',
     'download_url': 'Where to download it.',
     'author_email': 'kristian.nordin@proton.me',
     'version': '0.1',
