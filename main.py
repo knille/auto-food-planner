@@ -1,32 +1,20 @@
+import sys
 import sqlite3
-from tkinter import *
 
-root = tk.Tk()
-root.title("Auto Food Planner")
+from PyQt6.QtWidgets import (
+    QApplication,
+    QMainWindow
+)
 
-root.mainloop()
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
 
-def plan_one_week():
-    # Get 5 recipes from db
-    pass
+        self.setWindowTitle("Auto Food Planner")
 
-def plan_two_weeks():
-    # Not sure about this...
-    pass
+app = QApplication(sys.argv)
 
-def grocery_to_taskmanager():
-    # Send amount, unit and grocery to taskmanager
-    # Example 1 litre milk
-    pass
+window = MainWindow()
+window.show()
 
-def meals_to_calender():
-    # Send mealtitle to calender as whole day event
-    pass
-
-def previously_planned_meals():
-    # History of previously planned meals.
-    # Check against db table so the same meal
-    # dones'nt comes two weeks in a row
-    pass
-
-
+app.exec()
