@@ -3,11 +3,11 @@
 
 
 
-def plan_one_week():
+def plan_week_one_meal_per_day():
     # Get 5 recipes from db
     pass
 
-def plan_two_weeks():
+def plan_week_two_meals_per_day():
     # Not sure about this...
     pass
 
